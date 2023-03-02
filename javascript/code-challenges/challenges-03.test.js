@@ -68,6 +68,7 @@ const notInFirstArray = (forbiddenValues, arr) => {
   return newArr;
 };
 
+//note added to complete pull RQ
 
 
 /* ------------------------------------------------------------------------------------------------
