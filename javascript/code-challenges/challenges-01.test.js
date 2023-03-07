@@ -12,7 +12,7 @@ const addOne = (arr) => {
   let newArr = [];
 
   arr.forEach(element => {
-  });(element => {
+  }); (element => {
 
     newArr.push(element + 1);
 
@@ -95,65 +95,6 @@ const addNumbers = (num, arr, times, callback) => {
 };
 
 /* ------------------------------------------------------------------------------------------------
-CHALLENGE 3
-
-Write a function named `allUpperCase` that takes an array of strings, and returns a new array of the strings converted to upper case.
-
-Use `forEach` to loop over the input array. The modified strings should each be added into a local array. Return that local array.
------------------------------------------------------------------------------------------------- */
-
-const allUpperCase = (arr) => {
-  // Solution code here...
-};
-
-/* ------------------------------------------------------------------------------------------------
-CHALLENGE 4
-
-Write a function named `greeting` that takes in a single string and returns the string in all uppercase letters, and followed by an "!".
-
-Then, write a function named `speaker` that takes in an array of strings and a callback function.
-
-Use `forEach` to build a new array of strings, each string modified by the callback. Return the new array.
------------------------------------------------------------------------------------------------- */
-
-const greeting = (word) => {
-  return word.toUpperCase() + '!';
-};
-
-const speaker = (words, callback) => {
-  let newArr = []
-  arr.forEach(elm) => {
-    newArr.push(callback(elm));
-  });
-  return newArr;
-  }
-};
-
-/* ------------------------------------------------------------------------------------------------
-CHALLENGE 5
-
-Write a function named addValues that takes in an array and a value and pushes the value into the array. This function does not need a return statement.
-
-Then, write a function named addNumbers that takes in four arguments:
-  - A number to be added to an array
-  - An array into which the number should be added
-  - The number of times the number should be added
-  - A callback function to use to add the numbers to the array (Hint: you already defined it)
-
-Within the addNumbers function, invoke the callback function as many times as necessary, based on the third argument of the addNumbers function.
-
-Return the modified array.
------------------------------------------------------------------------------------------------- */
-
-const addValues = (arr, value) => {
-  // Solution code here...
-};
-
-const addNumbers = (num, arr, times, callback) => {
-  // Solution code here...
-};
-
-/* ------------------------------------------------------------------------------------------------
 
 CHALLENGE 6
 
@@ -172,7 +113,17 @@ This function should use forEach to populate your grocery list based on the stor
 ------------------------------------------------------------------------------------------------ */
 
 const createList = (availableItems) => {
-  // Solution code here...
+  const createList = (availableItems) => {
+
+    let newArr = [];
+
+    availableItems.forEach(element => {
+      if (element.available === true) {
+        newArr.push(element.name);
+      }
+    });
+    return newArr;
+  };
 };
 
 /* ------------------------------------------------------------------------------------------------
