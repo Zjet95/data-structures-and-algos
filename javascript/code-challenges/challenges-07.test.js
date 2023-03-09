@@ -122,11 +122,11 @@ const gruffaloCrumble = {
 
 const listFoods = (recipe) => {
   let result = [];
-recipe.ingredients.forEach(ingredient => {
+  recipe.ingredients.forEach(ingredient) => {
   let withoutfirst = ingredient.slice(ingredient.indexOf('') + 1);
   let withoutSecond = withoutFirst.slice(withoutFirst)
 }
-  return result;
+return result;
 };
 
 /* ------------------------------------------------------------------------------------------------
