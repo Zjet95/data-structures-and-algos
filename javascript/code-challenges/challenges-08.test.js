@@ -83,7 +83,8 @@ For example:
 
 const isNum = (input) => {
   let regexPattern = /[0-9]/g;
-  return regexPattern.test(input);};
+  return regexPattern.test(input);
+};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -94,7 +95,8 @@ Write a function named containsWorld that takes in a string or number of any len
 
 const containsWorld = (input) => {
   let regexPattern = /world/g;
-  return regexPattern.test(input);};
+  return regexPattern.test(input);
+};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -105,9 +107,9 @@ Return an array containing all the matches.
 ------------------------------------------------------------------------------------------------ */
 
 const isCapitalized = (str) => {
-  const isCapitalized = (str) => {
-    let regexPattern = /[A-Z]\w+/g;
-    return str.match(regexPattern) || [];};
+  let regexPattern = /[A-Z]\w+/g;
+  return str.match(regexPattern) || [];
+};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
@@ -116,7 +118,8 @@ Write a function named citiesAtoJ that takes in an array of city names and uses 
 ------------------------------------------------------------------------------------------------ */
 
 const citiesAtoJ = (arr) => {
-  // Solution code here...
+  let cityCapPatter = /^[A-J]/;
+  return arr.filter(city => cityCapPatter.test(city));
 };
 
 /* ------------------------------------------------------------------------------------------------
